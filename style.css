@@ -1,0 +1,112 @@
+.buttons {
+	text-align: center;
+	margin: 10px 0px 20px;	
+}
+.buttons button {
+	text-transform: capitalize;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1660px;
+	margin: 0 auto;
+}
+.card {
+	text-align: center;
+	width: 100px;
+	height: 140px;
+	position: relative;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 8px;
+	margin: 5px;
+	background-color: white;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	transition: all .5s;
+	top: 0px;
+	left: 0px;
+	text-transform: capitalize;
+}
+.card i {
+	position: absolute;
+	font-size: 2rem;
+	font-style: normal;
+}
+.card i.left {
+	top: 0px;
+	left: 5px;
+}
+.card i.right {
+	bottom: 0px;
+	right: 5px;
+}
+
+.card.current, .card:hover {
+	top: -3px;
+	left: -3px;
+	box-shadow: 10px 10px #888888;
+}
+
+.card.hearts, .card.diamonds {
+	color: red;
+
+}
+.card.jokers {
+	font-family: serif;
+	font-size: 0rem;
+}
+.jokers.red {
+	color: red;
+}
+
+
+.ajax-failure {
+	display: none;
+	width: 250px;
+	margin: 20px auto;
+	background-color: crimson;
+	color: white;
+	border-radius: 3px;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+.loader {
+	opacity: 0;
+	transition-delay: .2s;
+	transition: .2s;
+}
+.loading {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,0.8);
+	z-index: 5;
+	opacity: 1;
+}
+.loading:after {
+	content: '';
+    border: 6px solid #ccc;
+    border-top: 6px solid dodgerblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+	display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
