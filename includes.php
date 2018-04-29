@@ -2,23 +2,23 @@
 $ranks = array("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king", "ace");
 
 $suites = array(
-	"clubs" => array(
+	"club" => array(
 		'icon' => "♣",
 		'ranks' => $ranks,
 	),
-	"spades" => array(
+	"spade" => array(
 		'icon' => "♠",
 		'ranks' => $ranks,
 	),
-	"hearts" => array(
+	"heart" => array(
 		'icon' => "♥",
 		'ranks' => $ranks,
 	),
-	"diamonds" => array(
+	"diamond" => array(
 		'icon' => "♦",
 		'ranks' => $ranks,
 	),
-	"jokers" => array(
+	"joker" => array(
 		'icon' => "J",
 		'ranks' => array('red', 'black'),
 	),

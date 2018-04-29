@@ -16,7 +16,7 @@
 		<?php foreach($suites as $suite => $suite_info) { ?>
 			<button class="suite-button <?=$suite;?>" data-suite="<?=$suite;?>"><?=$suite;?></button> 
 		<?php } ?>
-		<div class="testing">
+		<div class="switches">
 			<label class="switch">
 				Test loading
 				<input class="test_loading" type="checkbox">
